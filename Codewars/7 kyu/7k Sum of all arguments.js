@@ -1,11 +1,10 @@
 //@ts-check
 
 /**
- * @param  {...number} arr
  * @returns {number}
  */
-function sum(...arr) {
-  return arr.reduce((a, e) => a + e);
+function sum() {
+  return [...arguments].reduce((a, e) => a + e);
 } // sum()
 
 console.log(sum(1, 2, 3));
