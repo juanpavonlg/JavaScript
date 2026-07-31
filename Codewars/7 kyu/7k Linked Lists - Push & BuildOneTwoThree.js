@@ -6,8 +6,7 @@ function Node(data) {
 function push(head, data) {
   const node = new Node(data);
   node.next = head;
-  head = node;
-  return head;
+  return node;
 } // push()
 
 function buildOneTwoThree() {
